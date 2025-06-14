@@ -1,4 +1,3 @@
-// Smooth scroll for nav links
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
@@ -9,7 +8,7 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 
-// Back to top button fade
+
 const backToTop = document.querySelector('.back-to-top');
 window.addEventListener('scroll', () => {
   if (window.scrollY > 300) {
@@ -20,8 +19,6 @@ window.addEventListener('scroll', () => {
     backToTop.style.pointerEvents = 'none';
   }
 });
-
-// Form submission alert
 
 document.querySelector('#contact').addEventListener('submit', function(e) {
   e.preventDefault();
