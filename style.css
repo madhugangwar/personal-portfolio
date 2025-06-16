@@ -24,6 +24,28 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  left: 95vh;
+  background: transparent;
+  color: #101312;
+  padding: 0.5rem ;
+  border: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 1000;
+}
+
+.theme-toggle:hover {
+  background: transparent;
+}
+
+
 nav .nav-list {
   display: flex;
   justify-content: center;
@@ -104,25 +126,30 @@ h2{
   font-weight: 500;
 }
 
-.skills-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+ .skill {
+  position: relative;
+  padding: 0.5rem 1rem;
 }
 
-.skill {
-background: linear-gradient(145deg, #67bdce 20%, #3f7e8c 50%, #365f69 100%);
-  border: 1px solid #fffbfb;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.skill-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
 }
 
-.skill:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+.skill-bar {
+  background: #ccc;
+  height: 6px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.skill-progress {
+  background: #004d40;
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease-in-out;
 }
 
 .projects-grid {
@@ -254,4 +281,50 @@ footer {
   nav .nav-list {
     gap: 0.5rem;
   }
+}
+
+
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark-mode header {
+  background: #1f1f1f;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .skill,
+body.dark-mode form {
+  background: #2a2a2a;
+  border-color: #444;
+}
+
+body.dark-mode nav a {
+  color: #bbb;
+}
+
+body.dark-mode nav a:hover {
+  color: #ffa500;
+}
+
+body.dark-mode .project-link {
+  background: #333;
+}
+
+body.dark-mode .project-link:hover {
+  background: #555;
+}
+
+body.dark-mode .theme-toggle {
+  border-color: #eee;
+  color: #eee;
+}
+
+body.dark-mode #about {
+  color: #1f1f1f;
+}
+
+body.dark-mode footer {
+  background: #1f1f1f;
 }
