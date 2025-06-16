@@ -8,7 +8,7 @@
 </head>
 <body>
   <header id="home">
-    <nav>
+    <nav> 
       <ul class="nav-list">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -17,6 +17,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <button class="theme-toggle">🌙</button>
     <section class="hero">
       <h1>Madhu Gangwar</h1>
       <p>Front-End Developer | Creative Coder</p>
@@ -27,32 +28,58 @@
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>I am a passionate frontend developer dedicated to building clean, responsive,
-        and user-friendly web interfaces. My portfolio highlights a range of projects where
-        I’ve combined creativity with technical skills to deliver engaging digital experiences.
-        I have hands-on experience with HTML, CSS, JavaScript.I enjoy solving complex problems
-        through code and am always eager to learn and adopt new technologies to enhance my work. 
-        My focus is on writing efficient, maintainable code and creating designs that are both 
-        functional and visually appealing. Explore my work to see how I bring ideas to life on the web.
+      <p>I am a passionate and dedicated frontend developer with a strong 
+      interest in creating clean, responsive, and user-friendly web applications.
+       I completed my graduation from Invertis University, Bareilly, where I
+        built a solid foundation in programming and web technologies. My primary 
+        focus is on web development, and I enjoy working with HTML, CSS, JavaScript, 
+        and modern frameworks. I’m always eager to learn new tools and technologies
+         that can help me deliver better digital experiences. I believe in writing efficient,
+          maintainable code and designing interfaces that are both functional and visually appealing.
+         My goal is to combine creativity with technical skills to solve real-world problems on the web
 </p>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
       <div class="skills-grid">
-        <div class="skill">HTML5</div>
-        <div class="skill">CSS3</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Core Java</div>
-        <div class="skill">VS code</div>
-        <div class="skill">GitHub</div>
+        <div class="skill">
+  <span class="skill-icon">🌐</span> HTML5
+  <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+</div>
+
+<div class="skill">
+  <span class="skill-icon">🎨</span> CSS3
+  <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+</div>
+
+<div class="skill">
+  <span class="skill-icon">⚡</span> JavaScript
+  <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+</div>
+
+<div class="skill">
+  <span class="skill-icon">☕</span> Core Java
+  <div class="skill-bar"><div class="skill-progress" style="width: 65%;"></div></div>
+</div>
+
+<div class="skill">
+  <span class="skill-icon">📝</span> VS Code
+  <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+</div>
+
+<div class="skill">
+  <span class="skill-icon">🐙</span> GitHub
+  <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+</div>
+
       </div>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <div class="projects-grid">
-        <article class="project-card">
+         <article class="project-card">
           <h3>Simon Says Game</h3>
           <p>Created a Simon Says game (HTML/CSS) with responsive layout and interactive animations</p>
           <a href="https://github.com/madhugangwar/simon-says-game"  class="project-link">View on GitHub</a>
@@ -65,7 +92,7 @@
         <article class="project-card">
           <h3>Basic Website</h3>
           <p>Basic website using HTML and CSS with a responsive layout and simple, clean design</p>
-          <a href="https://github.com/madhugangwar/MyBasic_web" class="project-link">View on GitHub</a>
+          <a href="https://github.com/madhugangwar/MyBasic_web"  class="project-link">View on GitHub</a>
         </article>
         <article class="project-card">
           <h3>React weather App</h3>
@@ -80,7 +107,6 @@
       <form>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required />
-
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required />
 
@@ -96,6 +122,7 @@
     <p>&copy; 2025 Madhu Gangwar</p>
     <a href="#home" class="back-to-top">Back to Top</a>
   </footer>
-  <script src = "script.js"></script>
+  <script src="script.js"></script>
+   
 </body>
 </html>
