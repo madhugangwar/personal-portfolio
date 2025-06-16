@@ -49,3 +49,13 @@ alert('Thank you for your message!');
 this.reset();
 });
 
+
+document.querySelector('.theme-toggle').addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+
+
+document.querySelector('.theme-toggle').addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+
